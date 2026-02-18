@@ -1,60 +1,83 @@
-import { motion } from "framer-motion";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt  } from "react-icons/fa";
-import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
-
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 function Contact() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleWhatsappClick = () => {
+    // Example: require name/email before opening WhatsApp
+    const name = prompt("Enter your name:");
+    const email = prompt("Enter your email:");
+    if (name && email) {
+      window.open("https://wa.me/1234567890", "_blank"); // replace with your number
+    } else {
+      alert("Please provide name and email to continue.");
+    }
+  };
+
   return (
-    <section id="contact">
+    <section id="contact" className="relative">
+      {/* Floating Contact Bar */}
       <motion.div
-        className="contact-header"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
+        className="fixed bottom-6 right-6 bg-orange-500 text-white px-4 py-3 rounded-lg shadow-lg cursor-pointer flex items-center gap-2"
+        onClick={() => setIsOpen(!isOpen)}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
       >
-        <h2>Let's Connect</h2>
-        <p>Ready to discuss your next project or just say hello?</p>
+        <FaEnvelope /> Contact Me
       </motion.div>
 
-      <motion.div
-        className="contact-info"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-      >
-        <div className="contact-item">
-          <FaPhone className="contact-icon"/>
-          <span>+91 9381519723</span>
-        </div>
-        <div className="contact-item">
-          <FaEnvelope className="contact-icon"/>
-          <a href="mailto:vislavathgopal644@gmail.com">vislavathgopal644@gmail.com</a>
-        </div>
-        <div className="contact-item">
-          <FaMapMarkerAlt className="contact-icon"/>
-          <span>Hyderabad, India</span>
-        </div>
-      </motion.div>
+      {/* Expandable Form */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: 50, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 50, scale: 0.9 }}
+            transition={{ duration: 0.3 }}
+            className="fixed bottom-24 right-6 w-80 bg-white rounded-lg shadow-xl p-6 z-50"
+          >
+            <h3 className="text-lg font-semibold mb-4">Get in Touch</h3>
+            <form className="flex flex-col gap-3">
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="border px-3 py-2 rounded"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                className="border px-3 py-2 rounded"
+                required
+              />
+              <textarea
+                placeholder="Your Message"
+                className="border px-3 py-2 rounded"
+                rows={4}
+                required
+              />
+              <button
+                type="submit"
+                className="bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition"
+              >
+                Send Message
+              </button>
+            </form>
 
-      <motion.div
-        className="social-links"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.4 }}
-      >
-        <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer" className="social-link">
-          <FiGithub />
-        </a>
-        <a href="https://www.linkedin.com/in/vislavath-gopal-8b63a7327/" target="_blank" rel="noopener noreferrer" className="social-link">
-          <FiLinkedin />
-        </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link">
-          <FiTwitter />
-        </a>
-      </motion.div>
+            {/* Optional WhatsApp Button */}
+            <div className="mt-4 flex justify-center">
+              <button
+                onClick={handleWhatsappClick}
+                className="flex items-center gap-2 bg-green-500 text-white px-3 py-2 rounded hover:bg-green-600 transition"
+              >
+                <FaWhatsapp /> Chat on WhatsApp
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
