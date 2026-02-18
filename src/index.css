@@ -910,6 +910,21 @@ ul.project-features li {
     grid-template-columns: 1fr;
   }
 }
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.tech-stack span {
+  background: #1f2937;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+}
 
 /* CONTACT SECTION */
 #contact {
