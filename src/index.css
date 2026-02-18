@@ -954,10 +954,7 @@ ul.project-features li {
   gap: 1rem;
   min-width: 280px;
 }
-.disabled{
-  
-  opacity: 0.5;
-}
+
 .contact-item {
   display: flex;
   align-items: center;
