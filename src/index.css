@@ -22,7 +22,7 @@ html, body {
 
 body{
 
-background: conic-gradient(from 90deg at 50% 0%, #274846, #142bac);
+background: linear-gradient(135deg, #020617, #0b1229, #020617);
 
 color:var(--text-primary);
 line-height:1.6;
