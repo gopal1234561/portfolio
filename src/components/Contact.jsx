@@ -21,6 +21,13 @@ function Contact() {
     <section id="contact">
       {/* MAIN CONTACT SECTION */}
       <div className="contact-container">
+         {/* Header */}
+        <div className="contact-header">
+          <h2>Let's Connect</h2>
+          <p>Use the form or WhatsApp to reach out. I’ll respond quickly!</p>
+        </div>
+      </div>
+
         {/* Contact Info */}
         <div className="contact-info">
           <div className="contact-item disabled" >
@@ -44,13 +51,7 @@ function Contact() {
           </div>
         </div>
 
-        {/* Header */}
-        <div className="contact-header">
-          <h2>Let's Connect</h2>
-          <p>Use the form or WhatsApp to reach out. I’ll respond quickly!</p>
-        </div>
-      </div>
-
+       
       {/* Floating Contact Button */}
       <motion.div
         className="contact-float-btn"
