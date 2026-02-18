@@ -954,7 +954,16 @@ ul.project-features li {
   gap: 1rem;
   min-width: 280px;
 }
-
+.phone.disabled {
+  color: #6b7280;        /* Gray color to indicate disabled/inactive */
+  cursor: default;       /* Normal cursor, not pointer */
+  user-select: none;     /* Optional: prevents text selection */
+  font-weight: 500;      /* Optional styling */
+  transition: color 0.3s;
+}
+.phone.disabled:hover {
+  color: #6b7280;        /* Keep same color on hover or subtle change */
+}
 .contact-item {
   display: flex;
   align-items: center;
