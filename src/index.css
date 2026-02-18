@@ -1035,17 +1035,30 @@ ul.project-features li {
 /* MOBILE RESPONSIVE */
 @media(max-width:768px){
   #contact {
-    align-items: center;
+    flex-direction: column; /* stack header and info vertically */
+    align-items: center; /* center everything */
+    text-align: center;
+    padding: 50px 20px; /* reduce padding on mobile */
   }
-  .contact-header h2, .contact-header p {
+
+  .contact-header h2, 
+  .contact-header p {
     text-align: center;
   }
+
   .contact-info {
-    align-items: center;
+    align-items: center; /* center the contact items */
     max-width: 100%;
   }
-}
 
+  .contact-item {
+    justify-content: center; /* center icon + text horizontally */
+  }
+
+  .social-links {
+    justify-content: center; /* center social icons */
+  }
+}
 
 /* MOBILE RESPONSIVE */
 @media(max-width:768px){
