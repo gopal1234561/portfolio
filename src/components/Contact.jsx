@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaEnvelope, FaWhatsapp, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
-import './Contact.css';
+
 
 function Contact() {
   const [isOpen, setIsOpen] = useState(false);
