@@ -32,7 +32,7 @@ function Contact() {
         <div className="contact-info">
           <div className="contact-item " >
             <FaPhone className="contact-icon" />
-            <span className="class disabled">+91 9381519723</span>
+            <span className="phone disabled">+91 9381xxx723</span>
           </div>
           <div className="contact-item">
             <FaEnvelope className="contact-icon" />
