@@ -941,7 +941,6 @@ ul.project-features li {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2.5rem;
-  background-color: #fff;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 8px 20px rgba(0,0,0,0.05);
