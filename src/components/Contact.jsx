@@ -20,10 +20,10 @@ function Contact() {
   return (
     <section id="contact">
       {/* MAIN CONTACT SECTION */}
-      <div className="container">
+      <div className="contact-container">
         {/* Contact Info */}
         <div className="contact-info">
-          <div className="contact-item">
+          <div className="contact-item disabled" >
             <FaPhone className="contact-icon" />
             <span>+91 9381519723</span>
           </div>
