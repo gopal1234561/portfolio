@@ -926,55 +926,56 @@ ul.project-features li {
   white-space: nowrap;
 }
 
-/* CONTACT SECTION */
 /* ====== CONTACT SECTION ====== */
+/* CONTACT SECTION */
 #contact {
-  padding: 5rem 1.25rem;
-  background-color: #f9fafb; /* light gray */
+  padding: 5rem 1rem;
+  background-color: #f9fafb;
 }
 
 /* Container */
-#contact > .container {
+.container {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 2.5rem;
   background-color: #fff;
-  padding: 2.5rem;
-  border-radius: 2rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
 
-/* Left: Contact Info */
+/* Contact Info */
 .contact-info {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   min-width: 280px;
 }
 
-/* Contact item card */
 .contact-item {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 1rem;
-  font-size: 1.1rem;
-  color: #111;
-  background-color: #fff;
-  border-radius: 1rem;
+  padding: 0.75rem 1rem;
   border: 1px solid #e5e7eb;
-  transition: all 0.3s ease;
-  cursor: default;
+  border-radius: 0.75rem;
+  background-color: #fff;
+  transition: 0.3s;
 }
 
 .contact-item:hover {
-  background: linear-gradient(135deg, #f97316, #4f46e5);
+  background-color: #f97316;
   color: #fff;
-  transform: translateY(-3px);
+}
+
+.contact-icon {
+  font-size: 1.25rem;
+  color: #f97316;
+  flex-shrink: 0;
 }
 
 .contact-item a {
@@ -982,47 +983,24 @@ ul.project-features li {
   text-decoration: none;
 }
 
-.contact-item a:hover {
-  color: #fff;
+/* Social Links */
+.social-links, .social-links-form {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-/* Icon */
-.contact-item .contact-icon {
+.social-links a, .social-links-form a {
   font-size: 1.5rem;
-  color: #f97316; /* orange */
-  flex-shrink: 0;
-}
-
-/* Social Links (left column) */
-.social-links {
-  display: flex;
-  gap: 1.25rem;
-  margin-top: 1.5rem;
-}
-
-.social-links a {
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background-color: #f3f4f6;
-  border: 1px solid #e5e7eb;
   color: #555;
-  font-size: 1.4rem;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
-.social-links a:hover {
-  background: linear-gradient(135deg, #f97316, #4f46e5);
-  border-color: #f97316;
-  color: #fff;
-  transform: translateY(-3px);
-  box-shadow: 0 0 20px rgba(99,102,241,0.4);
+.social-links a:hover, .social-links-form a:hover {
+  color: #f97316;
 }
 
-/* Right: Header */
+/* Header */
 .contact-header {
   flex: 1;
   min-width: 280px;
@@ -1030,113 +1008,18 @@ ul.project-features li {
 }
 
 .contact-header h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 0;
-  color: #f97316; /* orange */
+  color: #f97316;
 }
 
 .contact-header p {
   margin-top: 1rem;
-  font-size: 1.15rem;
-  color: #6b7280; /* gray */
-  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #6b7280;
 }
 
-/* ====== FLOATING CONTACT FORM ====== */
-.contact-form-popup {
-  position: fixed;
-  bottom: 6rem;
-  right: 1.25rem;
-  width: 360px;
-  background-color: #fff;
-  border-radius: 1.5rem;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-  padding: 1.5rem;
-  z-index: 999;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-/* Form header */
-.contact-form-popup h3 {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #f97316;
-}
-
-/* Form fields */
-.contact-form-popup form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.contact-form-popup input,
-.contact-form-popup textarea {
-  padding: 0.75rem 1rem;
-  border-radius: 1rem;
-  border: 1px solid #d1d5db;
-  font-size: 1rem;
-  width: 100%;
-  resize: none;
-}
-
-.contact-form-popup button {
-  padding: 0.75rem 0;
-  border-radius: 1rem;
-  border: none;
-  background-color: #f97316;
-  color: #fff;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.contact-form-popup button:hover {
-  background-color: #ea580c;
-}
-
-/* WhatsApp button */
-.contact-form-popup .whatsapp-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  background-color: #22c55e; /* green */
-  color: #fff;
-  padding: 0.5rem;
-  border-radius: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
-  width: 100%;
-}
-
-.contact-form-popup .whatsapp-btn:hover {
-  background-color: #16a34a;
-}
-
-/* Social icons inside form */
-.contact-form-popup .social-links-form {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-
-.contact-form-popup .social-links-form a {
-  color: #555;
-  font-size: 1.25rem;
-  transition: 0.3s;
-}
-
-.contact-form-popup .social-links-form a:hover {
-  color: #f97316;
-}
-
-/* ====== FLOATING CONTACT BUTTON ====== */
+/* Floating Contact Button */
 .contact-float-btn {
   position: fixed;
   bottom: 1.5rem;
@@ -1151,20 +1034,81 @@ ul.project-features li {
   gap: 0.5rem;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   z-index: 50;
-  transition: transform 0.2s ease;
+  transition: 0.2s;
 }
 
 .contact-float-btn:hover {
   transform: scale(1.05);
 }
 
-/* ====== RESPONSIVE ====== */
+/* Popup Form */
+.contact-form-popup {
+  position: fixed;
+  bottom: 6rem;
+  right: 1.5rem;
+  width: 360px;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+  padding: 1.5rem;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form-popup h3 {
+  text-align: center;
+  color: #f97316;
+  margin-bottom: 0.5rem;
+}
+
+.form input, .form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+.form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #f97316;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #ea580c;
+}
+
+.whatsapp-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #22c55e;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.whatsapp-btn:hover {
+  background-color: #16a34a;
+}
+
+/* RESPONSIVE */
 @media(max-width: 992px) {
-  #contact > .container {
+  .container {
     flex-direction: column-reverse;
     text-align: center;
     align-items: center;
-    gap: 2.5rem;
   }
 
   .contact-header {
@@ -1179,7 +1123,7 @@ ul.project-features li {
     justify-content: center;
   }
 
-  .social-links {
+  .social-links, .social-links-form {
     justify-content: center;
   }
 
