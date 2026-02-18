@@ -26,7 +26,7 @@ function Contact() {
           <h2>Let's Connect</h2>
           <p>Use the form or WhatsApp to reach out. I’ll respond quickly!</p>
         </div>
-      </div>
+     
 
         {/* Contact Info */}
         <div className="contact-info">
@@ -50,7 +50,7 @@ function Contact() {
             <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><FiTwitter /></a>
           </div>
         </div>
-
+           </div>
        
       {/* Floating Contact Button */}
       <motion.div
