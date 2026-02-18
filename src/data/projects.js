@@ -4,7 +4,7 @@ export const projects = [
     backgroundImage: "https://res.cloudinary.com/dq8tjhtog/image/upload/v1771252367/weather_deqjsh.png",
     type: "Web Application",
     description: "Real-time weather data and forecasts with a responsive UI.",
-    technologies: ["React", "Weather API", "CSS3", "JavaScript"],
+    technologies: ["Html", "Weather API", "CSS3", "JavaScript"],
     features: [
       "Real-time Weather Data",
       "Location Search",
@@ -19,7 +19,7 @@ export const projects = [
     backgroundImage: "https://res.cloudinary.com/dq8tjhtog/image/upload/v1771351799/Screenshot_2026-02-17_233941_i6kska.png",
     type: "Web Application",
     description: "Frontend platform  static website with proper alighnments.",
-    technologies: ["React", "CSS3", "JavaScript", "HTML5"],
+    technologies: [ "CSS3", "JavaScript", "HTML5"],
     features: [
       "Course Display",
       "User Login/Signup",
@@ -34,7 +34,7 @@ export const projects = [
   backgroundImage: "https://res.cloudinary.com/dq8tjhtog/image/upload/v1771296149/myscheduler_tv0nus.png",
   type: "Web Application / Scheduler",
   description: "A dynamic scheduling app to manage student tasks,progress analytics and records.",
-  technologies: ["React", "CSS3", "JavaScript", "MongoDB", "Express"],
+  technologies: ["React", "Tailwind CSS", "Vite", "PLpgSQL"],
   features: [
     "Create & Manage Schedules",
     
