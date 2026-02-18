@@ -32,37 +32,48 @@ function Projects() {
               </div>
 
               {/* Project Content Below Image */}
-              <div className="project-content">
-                <h3>{proj.title}</h3>
-                <p>{proj.description}</p>
-                <ul className="project-features">
-                  {proj.features.map((f, j) => (
-                    <li key={j}>{f}</li>
-                  ))}
-                </ul>
-                <div className="project-links">
-                  {proj.demo !== "#" && (
-                    <a
-                      href={proj.demo}
-                      className="btn-live"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Live Demo
-                    </a>
-                  )}
-                  {proj.code !== "#" && (
-                    <a
-                      href={proj.code}
-                      className="github-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaGithub className="github-icon" />
-                    </a>
-                  )}
-                </div>
-              </div>
+             <div className="project-content">
+  <h3>{proj.title}</h3>
+  <p>{proj.description}</p>
+
+  {/* Technologies */}
+  <div className="tech-stack">
+    {proj.technologies.map((tech, k) => (
+      <span key={k}>{tech}</span>
+    ))}
+  </div>
+
+  <ul className="project-features">
+    {proj.features.map((f, j) => (
+      <li key={j}>{f}</li>
+    ))}
+  </ul>
+
+  <div className="project-links">
+    {proj.demo !== "#" && (
+      <a
+        href={proj.demo}
+        className="btn-live"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Live Demo
+      </a>
+    )}
+
+    {proj.code !== "#" && (
+      <a
+        href={proj.code}
+        className="github-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaGithub className="github-icon" />
+      </a>
+    )}
+  </div>
+</div>
+
             </motion.div>
           ))}
         </div>
