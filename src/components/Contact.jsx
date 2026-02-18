@@ -11,7 +11,7 @@ function Contact() {
     const name = prompt("Enter your name:");
     const email = prompt("Enter your email:");
     if (name && email) {
-      window.open("https://wa.me/1234567890", "_blank"); // Replace with your number
+      window.open("https://wa.me/9381519723", "_blank"); // Replace with your number
     } else {
       alert("Please provide name and email to continue.");
     }
@@ -30,9 +30,9 @@ function Contact() {
 
         {/* Contact Info */}
         <div className="contact-info">
-          <div className="contact-item disabled" >
+          <div className="contact-item " >
             <FaPhone className="contact-icon" />
-            <span>+91 9381519723</span>
+            <span className="class disabled">+91 9381519723</span>
           </div>
           <div className="contact-item">
             <FaEnvelope className="contact-icon" />
