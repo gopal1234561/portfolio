@@ -955,7 +955,7 @@ ul.project-features li {
   min-width: 280px;
 }
 .disabled{
-   pointer-events: none;
+  
   opacity: 0.5;
 }
 .contact-item {
