@@ -37,7 +37,7 @@ function Hero() {
 <div className="hero-icons">
           {/* WhatsApp */}
           <a
-            href="https://wa.me/919381519723?text=Hello%20Gopal,%20I%20saw%20your%20portfolio."
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="hero-icon "
