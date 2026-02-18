@@ -40,7 +40,7 @@ function Hero() {
             href="https://wa.me/919381519723?text=Hello%20Gopal,%20I%20saw%20your%20portfolio."
             target="_blank"
             rel="noopener noreferrer"
-            className="hero-icon"
+            className="hero-icon invisible-hover"
           >
             <FaWhatsapp />
           </a>
