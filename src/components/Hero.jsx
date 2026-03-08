@@ -34,27 +34,7 @@ function Hero() {
           I build responsive and modern web applications using the MERN stack. 
           Passionate about creating interactive UI/UX and learning new technologies and more...
         </p>
-<div className="hero-icons">
-          {/* WhatsApp */}
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hero-icon "
-          >
-            <FaWhatsapp />
-          </a>
 
-          {/* Music */}
-          <a
-            href="https://open.spotify.com/user/yourprofile" // replace with your music link
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hero-icon" style={{color: "pink"}}
-          >
-            <FaMusic />
-          </a>
-        </div>
         <div className="hero-buttons">
           <a href="#about" className="btn-neon">
             More About Me 
