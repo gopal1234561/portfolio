@@ -47,7 +47,7 @@ function Contact() {
           <div className="social-links">
             <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer"><FiGithub /></a>
             <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"><FiLinkedin /></a>
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><FiTwitter /></a>
+            <a href="mailto:vislavathgopal644@gmail.com">@</a>
           </div>
         </div>
            </div>
