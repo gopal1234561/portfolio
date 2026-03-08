@@ -992,20 +992,35 @@ ul.project-features li {
 }
 
 /* Social Links */
-.social-links, .social-links-form {
+.social-links, 
+.social-links-form {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
 }
 
-.social-links a, .social-links-form a {
-  font-size: 1.5rem;
+/* Circle Icons */
+.social-links a, 
+.social-links-form a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  font-size: 1.3rem;
   color: #555;
-  transition: 0.3s;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-.social-links a:hover, .social-links-form a:hover {
-  color: #f97316;
+/* Hover Effect */
+.social-links a:hover, 
+.social-links-form a:hover {
+  background: #f97316;
+  color: white;
+  transform: translateY(-3px);
 }
 
 /* Header */
