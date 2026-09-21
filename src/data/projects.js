@@ -5,9 +5,14 @@ export const projects = [
     type: "AI Developer Platform",
     description: "A developer intelligence platform that analyzes repositories and turns source code into architecture, dependency, security, quality, risk, and impact insights.",
     technologies: ["React", "TypeScript", "Node.js", "Express", "Vite"],
-    features: ["Repository analysis & indexing", "Dependency and impact analysis", "Security, quality and risk insights"],
+    features: [
+      "Repository analysis & indexing",
+      "Dependency and impact analysis",
+      "Security, quality and risk insights"
+    ],
     demo: "https://codebase-intelligence-usxv.onrender.com/",
-    code: "https://github.com/gopal1234561/Codebase-Intelligence"
+    code: "https://github.com/gopal1234561/Codebase-Intelligence",
+    imageLink: "https://codebase-intelligence-usxv.onrender.com/"
   },
   {
     title: "Student Management System",
@@ -15,8 +20,12 @@ export const projects = [
     type: "Full-Stack Web App",
     description: "A responsive student records application with a React interface and REST API for managing student information.",
     technologies: ["React", "Node.js", "Express", "MongoDB", "REST API"],
-    features: ["Student CRUD operations", "Dashboard statistics", "API-driven data management"],
-    demo: "https://student-management-system-frontend.onrender.com",
+    features: [
+      "Student CRUD operations",
+      "Dashboard statistics",
+      "API-driven data management"
+    ],
+    demo: "https://student-management-system-beige-sigma.vercel.app/",
     code: "https://github.com/gopal1234561/student_management_system"
   },
   {
@@ -25,7 +34,11 @@ export const projects = [
     type: "Productivity Web App",
     description: "A study planning application for organizing GATE preparation with schedules, tasks, progress tracking, and analytics.",
     technologies: ["React", "Vite", "Tailwind CSS", "JavaScript"],
-    features: ["Study schedule management", "Progress tracking", "Focused preparation workflow"],
+    features: [
+      "Study schedule management",
+      "Progress tracking",
+      "Focused preparation workflow"
+    ],
     demo: "https://gate-planner-pro.vercel.app/",
     code: "https://github.com/gopal1234561/gate-planner-pro"
   },
@@ -35,7 +48,11 @@ export const projects = [
     type: "Web Application",
     description: "A responsive weather dashboard with real-time conditions, location services, hourly and five-day forecasts, unit conversion, and dynamic visuals.",
     technologies: ["HTML5", "CSS3", "JavaScript", "OpenWeatherMap API"],
-    features: ["Real-time weather search", "Hourly and 5-day forecasts", "Geolocation and unit conversion"],
+    features: [
+      "Real-time weather search",
+      "Hourly and 5-day forecasts",
+      "Geolocation and unit conversion"
+    ],
     demo: "https://weather-dashboard-two-chi.vercel.app/",
     code: "https://github.com/gopal1234561/Weather_Dashboard"
   },
@@ -45,7 +62,11 @@ export const projects = [
     type: "Frontend Web App",
     description: "A clean responsive e-learning interface for presenting courses, learning content, and enrollment-oriented user flows.",
     technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
-    features: ["Course-focused interface", "Enrollment-oriented pages", "Responsive frontend layout"],
+    features: [
+      "Course-focused interface",
+      "Enrollment-oriented pages",
+      "Responsive frontend layout"
+    ],
     demo: "https://gopal1234561.github.io/E-learning/",
     code: "https://github.com/gopal1234561/E-learning"
   }
