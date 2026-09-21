@@ -1,101 +1,21 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { FaEnvelope, FaWhatsapp, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
-import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
-
-function Contact() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleWhatsappClick = () => {
-    const name = prompt("Enter your name:");
-    const email = prompt("Enter your email:");
-    if (name && email) {
-      window.open("https://wa.me/9381519723", "_blank"); // Replace with your number
-    } else {
-      alert("Please provide name and email to continue.");
-    }
-  };
-
+export default function Contact() {
   return (
-    <section id="contact">
-      {/* MAIN CONTACT SECTION */}
-      <div className="contact-container">
-         {/* Header */}
-        <div className="contact-header">
-          <h2>Let's Connect</h2>
-          <p>Use the form or WhatsApp to reach out. I’ll respond quickly!</p>
+    <section id="contact" className="contact-section section-shell">
+      <div className="contact-panel">
+        <div>
+          <span className="contact-kicker">04 / CONTACT</span>
+          <h2>Let's build something useful.</h2>
+          <p>Have an internship opportunity, project idea, or just want to connect? Reach me through email or LinkedIn.</p>
         </div>
-     
-
-        {/* Contact Info */}
-        <div className="contact-info">
-          <div className="contact-item " >
-            <FaPhone className="contact-icon" />
-            <span className="phone disabled">+91 9381xxx723</span>
-          </div>
-          <div className="contact-item">
-            <FaEnvelope className="contact-icon" />
-            <a href="mailto:vislavathgopal644@gmail.com">vislavathgopal644@gmail.com</a>
-          </div>
-          <div className="contact-item">
-            <FaMapMarkerAlt className="contact-icon" />
-            <span>Hyderabad, India</span>
-          </div>
-
-          {/* Social Icons */}
-          <div className="social-links">
-            <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer"><FiGithub /></a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"><FiLinkedin /></a>
-            <a href="mailto:vislavathgopal644@gmail.com">@</a>
-          </div>
+        <div className="contact-actions">
+          <a className="primary-btn" href="mailto:vislavathgopal644@gmail.com"><FaEnvelope /> Email me</a>
+          <a className="secondary-btn" href="https://www.linkedin.com/in/vislavath-gopal-8b63a7327" target="_blank" rel="noreferrer"><FaLinkedin /> LinkedIn</a>
+          <a className="secondary-btn" href="https://github.com/gopal1234561" target="_blank" rel="noreferrer"><FaGithub /> GitHub</a>
         </div>
-           </div>
-       
-      {/* Floating Contact Button */}
-      <motion.div
-        className="contact-float-btn"
-        onClick={() => setIsOpen(!isOpen)}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        <FaEnvelope /> Contact Me
-      </motion.div>
-
-      {/* Expandable Form */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 50 }}
-            transition={{ duration: 0.3 }}
-            className="contact-form-popup"
-          >
-            <h3>Get in Touch</h3>
-
-            <form className="form">
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Your Email" required />
-              <textarea placeholder="Your Message" rows={4} required />
-              <button type="submit">Send Message</button>
-            </form>
-
-            <button className="whatsapp-btn" onClick={handleWhatsappClick}>
-              <FaWhatsapp /> Chat on WhatsApp
-            </button>
-
-            {/* Social icons inside form */}
-            <div className="social-links-form">
-              <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer"><FiGithub /></a>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"><FiLinkedin /></a>
-              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><FiTwitter /></a>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      </div>
+      <footer><span>© {new Date().getFullYear()} Vislavath Gopal</span><span>Built with React · Framer Motion</span></footer>
     </section>
   );
 }
-
-export default Contact;
