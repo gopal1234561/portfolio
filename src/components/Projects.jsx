@@ -24,8 +24,8 @@ export default function Projects() {
               <div className="tech-stack">{proj.technologies.map(t => <span key={t}>{t}</span>)}</div>
               <ul className="project-features">{proj.features.slice(0,3).map(f => <li key={f}>{f}</li>)}</ul>
               <div className="project-links">
-                {proj.demo !== "#" && <a href={proj.demo} target="_blank" rel="noreferrer" className="btn-live">Live Demo <FaExternalLinkAlt /></a>}
-                {proj.code !== "#" && <a href={proj.code} target="_blank" rel="noreferrer" className="github-link"><FaGithub /> Source</a>}
+                {proj.demo !== "#" && <a href={proj.demo} target="_blank" rel="noreferrer" className="btn-live">Website <FaExternalLinkAlt /></a>}
+                {proj.code !== "#" && <a href={proj.code} target="_blank" rel="noreferrer" className="github-link"><FaGithub /> GitHub</a>}
               </div>
             </div>
           </motion.article>
