@@ -14,29 +14,28 @@ export default function Hero() {
           Computer Science student at CBIT Hyderabad focused on full-stack development,
           problem solving, and building useful products with modern web technologies.
         </p>
-
         <div className="hero-actions">
           <a href="#projects" className="primary-btn">View Projects <FaArrowRight /></a>
           <a href="https://github.com/gopal1234561" target="_blank" rel="noreferrer" className="secondary-btn"><FaGithub /> GitHub</a>
         </div>
-
         <div className="hero-socials">
           <a href="https://www.linkedin.com/in/vislavath-gopal-8b63a7327" target="_blank" rel="noreferrer"><FaLinkedin /> LinkedIn</a>
-          <span>•</span>
-          <span>Hyderabad, India</span>
+          <span>•</span><span>Hyderabad, India</span>
         </div>
       </div>
 
       <div className="hero-right">
         <div className="profile-orbit orbit-one" />
         <div className="profile-orbit orbit-two" />
+        <div className="profile-orbit orbit-three" />
+        <div className="orbit-dot dot-one" /><div className="orbit-dot dot-two" />
         <div className="profile-wrapper">
           <div className="profile-glow" />
           <div className="inner-circle">
             <img src="https://res.cloudinary.com/dq8tjhtog/image/upload/v1771251175/_93A9738_zabbdw.jpg" alt="Vislavath Gopal" className="profile-img" />
           </div>
         </div>
-        <div className="floating-card card-top"><strong>3+</strong><span>Projects</span></div>
+        <div className="floating-card card-top"><strong>5+</strong><span>Featured Projects</span></div>
         <div className="floating-card card-bottom"><strong>2027</strong><span>Graduation</span></div>
       </div>
     </section>
