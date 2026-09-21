@@ -1,89 +1,51 @@
-import React, { useState, useEffect } from "react";
-import {
-  FaLaptopCode,
-  FaBars,
-  FaTimes,
-  FaHome,
-  FaUser,
-  FaTools,
-  FaProjectDiagram,
-  FaEnvelope,
-} from "react-icons/fa";
+import React, { useEffect, useState } from "react";
+import { FaBars, FaTimes, FaLaptopCode } from "react-icons/fa";
+
+const menu = ["home", "about", "skills", "projects", "contact"];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const [active, setActive] = useState("home");
 
-  const menu = ["home", "about", "skills", "projects", "contact"];
-  const icons = {
-    home: <FaHome />,
-    about: <FaUser />,
-    skills: <FaTools />,
-    projects: <FaProjectDiagram />,
-    contact: <FaEnvelope />,
-  };
-
-  // Scroll listener
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-
-      document.querySelectorAll("section").forEach((sec) => {
-        const top = window.scrollY;
-        const offset = sec.offsetTop - 150;
-        const h = sec.offsetHeight;
-        const id = sec.getAttribute("id");
-        if (top >= offset && top < offset + h) setActive(id);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 24);
+      const current = menu.find((id) => {
+        const el = document.getElementById(id);
+        return el && window.scrollY >= el.offsetTop - 180 && window.scrollY < el.offsetTop + el.offsetHeight - 180;
       });
+      if (current) setActive(current);
     };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-      {/* BRAND */}
-      <div className="brand">
-        <FaLaptopCode className="brand-icon" />
-        {"Portfolio".split("").map((l, i) => (
-          <span key={i} style={{ animationDelay: `${i * 0.08}s` }}>
-            {l}
-          </span>
-        ))}
-      </div>
+      <a className="brand" href="#home" aria-label="Gopal portfolio home">
+        <span className="brand-mark"><FaLaptopCode /></span>
+        <span>Gopal<span className="brand-dot">.</span></span>
+      </a>
 
-      {/* DESKTOP LINKS */}
       <div className="links">
-        {menu.map((i) => (
-          <a
-            key={i}
-            href={`#${i}`}
-            className={active === i ? "active" : ""}
-            style={{ display: "flex", alignItems: "center", gap: "6px" }}
-          >
-            {icons[i]} <span>{i.toUpperCase()}</span>
+        {menu.map((item) => (
+          <a key={item} href={`#${item}`} className={active === item ? "active" : ""}>
+            {item}
           </a>
         ))}
       </div>
 
-      {/* MOBILE TOGGLE */}
-      <div className="mobile" onClick={() => setOpen(!open)}>
+      <button className="mobile" onClick={() => setOpen(!open)} aria-label="Toggle navigation">
         {open ? <FaTimes /> : <FaBars />}
-      </div>
+      </button>
 
-      {/* MOBILE MENU */}
       {open && (
         <div className="mobile-menu">
-          {menu.map((i) => (
-            <a
-              key={i}
-              href={`#${i}`}
-              onClick={() => setOpen(false)}
-              style={{ display: "flex", alignItems: "center", gap: "8px" }}
-            >
-              {icons[i]} <span>{i.toUpperCase()}</span>
+          {menu.map((item) => (
+            <a key={item} href={`#${item}`} onClick={() => setOpen(false)}>
+              {item}
             </a>
           ))}
         </div>
