@@ -3,7 +3,7 @@ export const projects = [
     title: "Codebase Intelligence",
     backgroundImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
     type: "AI Developer Platform",
-    description: "A developer intelligence platform that analyzes GitHub repositories and turns source code into architecture, dependency, security, quality, risk, and impact insights.",
+    description: "A developer intelligence platform that analyzes repositories and turns source code into architecture, dependency, security, quality, risk, and impact insights.",
     technologies: ["React", "TypeScript", "Node.js", "Express", "Vite"],
     features: ["Repository analysis & indexing", "Dependency and impact analysis", "Security, quality and risk insights"],
     demo: "https://codebase-intelligence-r95s.onrender.com",
@@ -13,19 +13,19 @@ export const projects = [
     title: "Student Management System",
     backgroundImage: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
     type: "Full-Stack Web App",
-    description: "A student records application for viewing, adding, editing, and deleting student information through a responsive React interface.",
-    technologies: ["React", "React Router", "Axios", "REST API"],
-    features: ["Student CRUD operations", "Responsive management UI", "API-driven data handling"],
+    description: "A responsive student records application with a React interface and REST API for managing student information.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "REST API"],
+    features: ["Student CRUD operations", "Dashboard statistics", "API-driven data management"],
     demo: "https://student-management-system-frontend.onrender.com",
-    code: "https://github.com/gopal1234561/student-management-system"
+    code: "https://github.com/gopal1234561/student_management_system"
   },
   {
     title: "GATE Planner Pro",
     backgroundImage: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&q=80",
     type: "Productivity Web App",
-    description: "A study planning application designed to organize GATE preparation with schedules, tasks, progress tracking, and analytics.",
-    technologies: ["React", "Tailwind CSS", "Vite", "PL/pgSQL"],
-    features: ["Create and manage schedules", "Track progress and records", "Responsive planner experience"],
+    description: "A study planning application for organizing GATE preparation with schedules, tasks, progress tracking, and analytics.",
+    technologies: ["React", "Vite", "Tailwind CSS", "JavaScript"],
+    features: ["Study schedule management", "Progress tracking", "Focused preparation workflow"],
     demo: "https://gate-planner-pro.vercel.app/",
     code: "https://github.com/gopal1234561/gate-planner-pro"
   },
@@ -44,9 +44,19 @@ export const projects = [
     backgroundImage: "https://res.cloudinary.com/dq8tjhtog/image/upload/v1771351799/Screenshot_2026-02-17_233941_i6kska.png",
     type: "Frontend Web App",
     description: "A clean responsive e-learning interface for presenting courses, learning content, and enrollment-oriented user flows.",
-    technologies: ["HTML5", "CSS3", "JavaScript"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
     features: ["Course-focused interface", "Enrollment-oriented pages", "Responsive frontend layout"],
     demo: "https://gopal1234561.github.io/E-learning/",
     code: "https://github.com/gopal1234561/E-learning"
+  },
+  {
+    title: "Data Visualization Assignment",
+    backgroundImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+    type: "Data Visualization",
+    description: "A visualization-focused project exploring datasets through charts and graphical representations to make patterns and comparisons easier to understand.",
+    technologies: ["Python", "Data Visualization", "Jupyter"],
+    features: ["Dataset exploration", "Visual analysis", "Clear graphical presentation"],
+    demo: "#",
+    code: "https://github.com/gopal1234561/Visualization_Assignment_63"
   }
 ];
