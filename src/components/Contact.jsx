@@ -15,7 +15,10 @@ export default function Contact() {
           <a className="secondary-btn" href="https://github.com/gopal1234561" target="_blank" rel="noreferrer"><FaGithub /> GitHub</a>
         </div>
       </div>
-      <footer><span>© {new Date().getFullYear()} Vislavath Gopal</span><span>Built with React · Framer Motion</span></footer>
+      <footer>
+        <span>© {new Date().getFullYear()} Vislavath Gopal</span>
+        <span>Built with React · Framer Motion</span>
+      </footer>
     </section>
   );
 }
