@@ -1,12 +1,12 @@
 export const projects = [
   {
     title: "Codebase Intelligence",
-    backgroundImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
+    backgroundImage: "https://res.cloudinary.com/dcegntn3n/image/upload/v1789994091/Screenshot_2026-09-21_175959_vbdqgo.png",
     type: "AI Developer Platform",
     description: "A developer intelligence platform that analyzes repositories and turns source code into architecture, dependency, security, quality, risk, and impact insights.",
     technologies: ["React", "TypeScript", "Node.js", "Express", "Vite"],
     features: ["Repository analysis & indexing", "Dependency and impact analysis", "Security, quality and risk insights"],
-    demo: "https://codebase-intelligence-r95s.onrender.com",
+    demo: "https://codebase-intelligence-usxv.onrender.com/",
     code: "https://github.com/gopal1234561/Codebase-Intelligence"
   },
   {
