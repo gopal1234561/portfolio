@@ -21,6 +21,7 @@ export default function Projects() {
             <div className="project-content">
               <div className="project-title-row"><h3>{proj.title}</h3><span>{String(i+1).padStart(2,"0")}</span></div>
               <p>{proj.description}</p>
+              {proj.demo !== "#" && <a className="project-url" href={proj.demo} target="_blank" rel="noreferrer" title={proj.demo}>{proj.demo}</a>}
               <div className="tech-stack">{proj.technologies.map(t => <span key={t}>{t}</span>)}</div>
               <ul className="project-features">{proj.features.slice(0,3).map(f => <li key={f}>{f}</li>)}</ul>
               <div className="project-links">
