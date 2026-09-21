@@ -48,15 +48,5 @@ export const projects = [
     features: ["Course-focused interface", "Enrollment-oriented pages", "Responsive frontend layout"],
     demo: "https://gopal1234561.github.io/E-learning/",
     code: "https://github.com/gopal1234561/E-learning"
-  },
-  {
-    title: "Data Visualization Assignment",
-    backgroundImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
-    type: "Data Visualization",
-    description: "A visualization-focused project exploring datasets through charts and graphical representations to make patterns and comparisons easier to understand.",
-    technologies: ["Python", "Data Visualization", "Jupyter"],
-    features: ["Dataset exploration", "Visual analysis", "Clear graphical presentation"],
-    demo: "#",
-    code: "https://github.com/gopal1234561/Visualization_Assignment_63"
   }
 ];
