@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaPython, FaJava, FaHtml5, FaCss3Alt, FaGithub, FaJs, FaGitAlt, FaCode } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiVite, SiPostman, SiFirebase, SiMysql, SiTailwindcss } from "react-icons/si";
+import { FaReact, FaNodeJs, FaPython, FaJava, FaHtml5, FaCss3Alt, FaGithub, FaJs, FaGitAlt } from "react-icons/fa";
+import { SiMongodb, SiExpress, SiVite, SiPostman, SiFirebase, SiMysql, SiTailwindcss, SiVisualstudiocode } from "react-icons/si";
 
 const groups = [
   { title:"Languages", items:[["C",null],["Java",FaJava],["Python",FaPython],["JavaScript",FaJs],["HTML5",FaHtml5],["CSS3",FaCss3Alt]] },
   { title:"Frameworks & Backend", items:[["React",FaReact],["Node.js",FaNodeJs],["Express.js",SiExpress],["Vite",SiVite],["MongoDB",SiMongodb],["MySQL",SiMysql],["Tailwind CSS",SiTailwindcss]] },
-  { title:"Tools & Workflow", items:[["Git",FaGitAlt],["GitHub",FaGithub],["VS Code",FaCode],["Postman",SiPostman],["Firebase",SiFirebase]] }
+  { title:"Tools & Workflow", items:[["Git",FaGitAlt],["GitHub",FaGithub],["VS Code",SiVisualstudiocode],["Postman",SiPostman],["Firebase",SiFirebase]] }
 ];
 
 export default function Skills() {
