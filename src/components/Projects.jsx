@@ -12,8 +12,12 @@ export default function Projects() {
       </div>
       <div className="projects-grid">
         {projects.map((proj, i) => (
-          <motion.article className="project-card" key={proj.title} initial={{opacity:0,y:24}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:i*.06}}>
-            <div className="project-image"><img src={proj.backgroundImage} alt={proj.title} loading="lazy" /><span>{proj.type}</span></div>
+          <motion.article className={`project-card ${i === 0 ? "project-featured" : ""}`} key={proj.title} initial={{opacity:0,y:24}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:i*.06}}>
+            <div className={`project-image ${i === 0 ? "project-interface" : ""}`}>
+              {i === 0 && <div className="interface-bar"><span></span><span></span><span></span><small>Codebase Intelligence</small></div>}
+              <img src={proj.backgroundImage} alt={proj.title} loading="lazy" />
+              <span>{proj.type}</span>
+            </div>
             <div className="project-content">
               <div className="project-title-row"><h3>{proj.title}</h3><span>{String(i+1).padStart(2,"0")}</span></div>
               <p>{proj.description}</p>
