@@ -15,7 +15,7 @@ export const projects = [
   },
   {
     title: "Student Management System",
-    previewImage: "https://res.cloudinary.com/dcegntn3n/image/upload/v1790597272/Screenshot_2026-09-28_173729_os3ayz.png",
+    previewImage: "https://res.cloudinary.com/dcegntn3n/image/upload/v1790617819/e416120c-01e7-4521-9cde-dfd383c6852e.png",
     type: "Full-Stack Web App",
     description: "A responsive student records application with a React interface and REST API for managing student information.",
     technologies: ["React", "Node.js", "Express", "MongoDB", "REST API"],
