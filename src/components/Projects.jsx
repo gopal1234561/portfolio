@@ -14,7 +14,7 @@ export default function Projects() {
       <div className="projects-grid">
         {projects.map((proj, i) => {
           const hasDemo = Boolean(proj.demo && proj.demo !== "#");
-          const imageHref = proj.imageLink || proj.demo;
+          const imageHref = proj.demo;
 
           return (
             <motion.article
@@ -40,7 +40,7 @@ export default function Projects() {
                     <small>Codebase Intelligence · Live interface</small>
                   </div>
                 )}
-                <img src={proj.backgroundImage} alt={proj.title + " interface preview"} loading="lazy" />
+                <img src={proj.previewImage} alt={proj.title + " interface preview"} loading="lazy" />
                 <span>{proj.type}</span>
               </a>
 
