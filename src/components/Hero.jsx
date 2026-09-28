@@ -32,7 +32,7 @@ export default function Hero() {
         <div className="profile-wrapper">
           <div className="profile-glow" />
           <div className="inner-circle">
-            <img src="https://res.cloudinary.com/dq8tjhtog/image/upload/v1771251175/_93A9738_zabbdw.jpg" alt="Vislavath Gopal" className="profile-img" />
+            <img src="https://res.cloudinary.com/dcegntn3n/image/upload/v1790618297/6cd90fbb-dff2-431c-bc89-ef87789b846c.png" alt="Vislavath Gopal" className="profile-img" />
           </div>
         </div>
         <div className="floating-card card-top"><strong>5+</strong><span>Featured Projects</span></div>
