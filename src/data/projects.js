@@ -12,7 +12,7 @@ export const projects = [
     ],
     demo: "https://codebase-intelligence-usxv.onrender.com/",
     code: "https://github.com/gopal1234561/Codebase-Intelligence",
-    imageLink: "https://codebase-intelligence-usxv.onrender.com/"
+    imageLink: "https://res.cloudinary.com/dcegntn3n/image/upload/v1789994091/Screenshot_2026-09-21_175959_vbdqgo.png"
   },
   {
     title: "Student Management System",
