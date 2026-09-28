@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: "Codebase Intelligence",
-    backgroundImage: "https://res.cloudinary.com/dcegntn3n/image/upload/v1789994091/Screenshot_2026-09-21_175959_vbdqgo.png",
+    previewImage: "https://res.cloudinary.com/dcegntn3n/image/upload/v1789994091/Screenshot_2026-09-21_175959_vbdqgo.png",
     type: "AI Developer Platform",
     description: "A developer intelligence platform that analyzes repositories and turns source code into architecture, dependency, security, quality, risk, and impact insights.",
     technologies: ["React", "TypeScript", "Node.js", "Express", "Vite"],
@@ -11,12 +11,11 @@ export const projects = [
       "Security, quality and risk insights"
     ],
     demo: "https://codebase-intelligence-usxv.onrender.com/",
-    code: "https://github.com/gopal1234561/Codebase-Intelligence",
-    imageLink: "https://res.cloudinary.com/dcegntn3n/image/upload/v1789994091/Screenshot_2026-09-21_175959_vbdqgo.png"
+    code: "https://github.com/gopal1234561/Codebase-Intelligence"
   },
   {
     title: "Student Management System",
-    backgroundImage: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+    previewImage: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
     type: "Full-Stack Web App",
     description: "A responsive student records application with a React interface and REST API for managing student information.",
     technologies: ["React", "Node.js", "Express", "MongoDB", "REST API"],
@@ -30,7 +29,7 @@ export const projects = [
   },
   {
     title: "GATE Planner Pro",
-    backgroundImage: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&q=80",
+    previewImage: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&q=80",
     type: "Productivity Web App",
     description: "A study planning application for organizing GATE preparation with schedules, tasks, progress tracking, and analytics.",
     technologies: ["React", "Vite", "Tailwind CSS", "JavaScript"],
@@ -44,7 +43,7 @@ export const projects = [
   },
   {
     title: "Weather Dashboard",
-    backgroundImage: "https://res.cloudinary.com/dq8tjhtog/image/upload/v1771252367/weather_deqjsh.png",
+    previewImage: "https://res.cloudinary.com/dq8tjhtog/image/upload/v1771252367/weather_deqjsh.png",
     type: "Web Application",
     description: "A responsive weather dashboard with real-time conditions, location services, hourly and five-day forecasts, unit conversion, and dynamic visuals.",
     technologies: ["HTML5", "CSS3", "JavaScript", "OpenWeatherMap API"],
@@ -58,7 +57,7 @@ export const projects = [
   },
   {
     title: "E-Learning Platform",
-    backgroundImage: "https://res.cloudinary.com/dq8tjhtog/image/upload/v1771351799/Screenshot_2026-02-17_233941_i6kska.png",
+    previewImage: "https://res.cloudinary.com/dq8tjhtog/image/upload/v1771351799/Screenshot_2026-02-17_233941_i6kska.png",
     type: "Frontend Web App",
     description: "A clean responsive e-learning interface for presenting courses, learning content, and enrollment-oriented user flows.",
     technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
