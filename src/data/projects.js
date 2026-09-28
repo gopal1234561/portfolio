@@ -29,7 +29,7 @@ export const projects = [
   },
   {
     title: "GATE Planner Pro",
-    previewImage: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&q=80",
+    previewImage: "https://res.cloudinary.com/dcegntn3n/image/upload/v1790596692/Screenshot_2026-09-28_170858_qxrkg2.png",
     type: "Productivity Web App",
     description: "A study planning application for organizing GATE preparation with schedules, tasks, progress tracking, and analytics.",
     technologies: ["React", "Vite", "Tailwind CSS", "JavaScript"],
